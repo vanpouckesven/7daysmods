@@ -1,0 +1,8 @@
+<configs>
+    <!-- CHANGE MINING MOD EXTRA -->
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']/effect_group/passive_effect[@name='DamageModifier']/@value">0.5</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']/effect_group/passive_effect[@name='DamageModifier']/@value">0.5</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']/effect_group/passive_effect[@name='DamageModifier']/@value">0.5</set>
+    <set xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']/effect_group/passive_effect[@name='DamageModifier']/@value">0.5</set>
+
+</configs>

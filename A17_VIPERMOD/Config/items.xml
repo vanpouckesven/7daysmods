@@ -1,0 +1,76 @@
+<configs>
+    <!-- CHANGE STACK NUMBERS -->
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='6000']/@value">10000</set>
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='1200']/@value">10000</set>
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='1000']/@value">10000</set>
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='500']/@value">1000</set>
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='250']/@value">1000</set>
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='100']/@value">500</set>
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='50']/@value">100</set>
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='15']/@value">100</set>
+    <set xpath="/items/item/property[@name='Stacknumber'][@value='10']/@value">100</set>
+
+
+    <!-- CHANGE MELT TIME -->
+    <append xpath="/items/item[@name='unit_iron']">
+      <property name="MeltTimePerUnit" value="0.1"/>
+    </append>
+
+    <append xpath="/items/item[@name='resourceRockSmall']">
+      <property name="MeltTimePerUnit" value="0.4"/>
+    </append>
+
+    <append xpath="/items/item[@name='resourceCrushedSand']">
+      <property name="MeltTimePerUnit" value="0.4"/>
+    </append>
+
+    <append xpath="/items/item[@name='resourceIronFragment']">
+      <property name="MeltTimePerUnit" value="0.4"/>
+    </append>
+
+    <append xpath="/items/item[@name='resourceScrapIron']">
+      <property name="MeltTimePerUnit" value="0.4"/>
+    </append>
+
+    <append xpath="/items/item[@name='resourceForgedIron']">
+      <property name="MeltTimePerUnit" value="0.4"/>
+    </append>
+
+    <append xpath="/items/item[@name='resourceScrapBrass']">
+      <property name="MeltTimePerUnit" value="0.4"/>
+    </append>
+
+    <append xpath="/items/item[@name='resourceScrapLead']">
+      <property name="MeltTimePerUnit" value="0.4"/>
+    </append>
+
+    <append xpath="/items/item[@name='resourceClayLump']">
+      <property name="MeltTimePerUnit" value="0.4"/>
+    </append>
+
+
+    <!-- CHANGE RANGE FOR PICKAXE -->
+    <set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='MaxRange']/@value">6</set>
+    <set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='BlockRange']/@value">6</set>
+
+    <set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='MaxRange']/@value">6</set>
+    <set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='BlockRange']/@value">6</set>
+
+    <!-- Sniper rifle 10 rounds -->
+    <set xpath="/items/item[@name='gunRifleT2MarksmanRifle']/effect_group[@name='gunRifleT2MarksmanRifle']/passive_effect[@name='MagazineSize']/@value">10</set>
+
+    <!-- CROSSBOW ZOOM + MAGAZINE SIZE + QUICKER RELOAD -->
+    <set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='ReloadSpeedMultiplier']/@value">.75</set>
+    <set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='MagazineSize']/@value">5</set>
+    <append xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='Tags']/@value">,largeTopAttachments</append>
+
+    <set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='ReloadSpeedMultiplier']/@value">.75</set>
+    <set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='MagazineSize']/@value">5</set>
+    <append xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='Tags']/@value">,largeTopAttachments</append>
+
+    <set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='MagazineSize']/@value">5</set>
+    <append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='Tags']/@value">,largeTopAttachments</append>
+
+
+
+</configs>

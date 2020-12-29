@@ -1,0 +1,11 @@
+<configs>
+  <!-- LOSS OF STAMINA AND HEALTH ON DEAD -->
+  <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerHealthPointGained']/@value">0.04</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.004</set>
+
+
+  <!-- SPEED MODIFIERS -->
+  <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='Mobility' and @operation='base_set']/@value">1.5</set>
+  <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='RunSpeed' and @operation='base_set']/@value">1.5</set>
+
+</configs>

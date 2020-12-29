@@ -1,0 +1,24 @@
+<configs>
+    <!-- CHANGE HARDWARE STORE GENERATION -->
+    <set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='storeGroup']/prefab[@name='store_hardware_lg_01']/@prob">0.6</set>
+    <setattribute xpath="/rwgmixer/prefab_rules/prefab_rule[@name='storeGroup']/prefab[@name='store_hardware_lg_01']" name="max_count">1</setattribute>
+    <set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='storeGroup']/prefab[@name='store_book_lg_01']/@prob">0.6</set>
+    <setattribute xpath="/rwgmixer/prefab_rules/prefab_rule[@name='storeGroup']/prefab[@name='store_book_lg_01']" name="max_count">1</setattribute>
+    <set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='storeGroup']/prefab[@name='store_book_sm_01']/@prob">1</set>
+    <setattribute xpath="/rwgmixer/prefab_rules/prefab_rule[@name='storeGroup']/prefab[@name='store_book_sm_01']" name="max_count">5</setattribute>
+    <set xpath="/rwgmixer/prefab_rules/prefab_rule[@name='storeGroup']/prefab[@name='store_hardware_sm_01']/@prob">1</set>
+    <setattribute xpath="/rwgmixer/prefab_rules/prefab_rule[@name='storeGroup']/prefab[@name='store_hardware_sm_01']" name="max_count">5</setattribute>
+
+    <!-- CHANGE BIOMES -->
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla4k']/module[@type='BiomeIDMapper']/property[@name='biomemap0.Range']/@value">0.5,0.7</set>
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla4k']/module[@type='BiomeIDMapper']/property[@name='biomemap1.Range']/@value">0,0.5</set>
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla4k']/module[@type='BiomeIDMapper']/property[@name='biomemap2.Range']/@value">0.7,0.75</set>
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla4k']/module[@type='BiomeIDMapper']/property[@name='biomemap3.Range']/@value">0.75,0.80</set>
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla4k']/module[@type='BiomeIDMapper']/property[@name='biomemap4.Range']/@value">0.80,1</set>
+
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla8k']/module[@type='BiomeIDMapper']/property[@name='biomemap0.Range']/@value">0.5,0.7</set>
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla8k']/module[@type='BiomeIDMapper']/property[@name='biomemap1.Range']/@value">0,0.5</set>
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla8k']/module[@type='BiomeIDMapper']/property[@name='biomemap2.Range']/@value">0.7,0.75</set>
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla8k']/module[@type='BiomeIDMapper']/property[@name='biomemap3.Range']/@value">0.75,0.80</set>
+    <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanilla8k']/module[@type='BiomeIDMapper']/property[@name='biomemap4.Range']/@value">0.80,1</set>
+</configs>

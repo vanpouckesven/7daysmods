@@ -1,0 +1,4 @@
+<configs>
+  <!-- Reduced death buff to 10 mins -->
+  <!--<set xpath="/buffs/buff[@name='buffNearDeathTrauma']/duration/@value">600</set>-->
+</configs>

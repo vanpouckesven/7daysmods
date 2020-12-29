@@ -1,0 +1,36 @@
+<configs>
+  <!-- FASTER CRAFTING FOR CONCRETE -->
+  <set xpath="/recipes/recipe[@name='resourceCement']/@count">5</set>
+  <setattribute xpath="/recipes/recipe[@name='resourceCement']" name="craft_time">2</setattribute>
+  <set xpath="/recipes/recipe[@name='resourceCement']/ingredient[@name='unit_stone']/@count">10</set>
+
+  <!-- FASTER CRAFTING FOR CONCRETE -->
+  <set xpath="/recipes/recipe[@name='resourceConcreteMix']/@count">5</set>
+  <setattribute xpath="/recipes/recipe[@name='resourceConcreteMix']" name="craft_time">2</setattribute>
+  <set xpath="/recipes/recipe[@name='resourceConcreteMix']/ingredient[@name='resourceCrushedSand']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='resourceConcreteMix']/ingredient[@name='resourceRockSmall']/@count">10</set>
+  <set xpath="/recipes/recipe[@name='resourceConcreteMix']/ingredient[@name='resourceCement']/@count">5</set>
+
+  <!-- Reduce materials required -->
+	<!-- Traps -->
+	<set xpath="/recipes/recipe[@name='trapSpikesWoodDmg0']/ingredient[@name='resourceWood']/@count">16</set>
+
+  <!-- Iron bars -->
+	<set xpath="/recipes/recipe[@name='ironBars']/ingredient[@name='unit_iron']/@count">20</set>
+	<set xpath="/recipes/recipe[@name='ironBars']/ingredient[@name='unit_clay']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='ironBarsCentered']/ingredient[@name='unit_iron']/@count">20</set>
+	<set xpath="/recipes/recipe[@name='ironBarsCentered']/ingredient[@name='unit_clay']/@count">10</set>
+
+  <!-- ADD STORAGE CHEST RECIPE -->
+
+<append xpath="/recipes">
+  <recipe name="cntStorageChest" count="1">
+	   <ingredient name="resourceWood" count="10"/>
+  </recipe>
+</append>
+
+  <!-- CHANGE RECIPE FOR GLUE -->
+  <set xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='chemistryStation']/@count">5</set>
+  <set xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='chemistryStation']/ingredient[@name='drinkJarRiverWater']/@count">5</set>
+
+</configs>

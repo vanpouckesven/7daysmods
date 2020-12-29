@@ -1,0 +1,54 @@
+<configs>
+  <!-- CHANGE YUCCA FIBERS -->
+  <set xpath="/blocks/block/drop[@name='resourceYuccaFibers']/@count">3</set>
+
+  <!-- BETTER STACKS FOR FRAMES -->
+  <append xpath="/blocks/block[@name='woodFrameMaster']">
+    <property name="Stacknumber" value="5000"/>
+  </append>
+
+  <append xpath="/blocks/block[@name='rebarFrameMaster']">
+    <property name="Stacknumber" value="5000"/>
+  </append>
+
+  <!-- Mining stone bonuses -->
+  	<append xpath="/blocks/block[@name='terrStone']">
+  		<drop event="Destroy" name="resourcePotassiumNitratePowder" count="14" prob="0.1" />
+  		<drop event="Destroy" name="resourceScrapLead" count="4" prob="0.1" />
+      <drop event="Destroy" name="resourceScrapBrass" count="2" prob="0.05" />
+  		<drop event="Destroy" name="resourceCoal" count="16" prob="0.1" />
+  		<drop event="Destroy" name="resourceScrapIron" count="16" prob="0.1" />
+  		<drop event="Destroy" name="resourceRawDiamond" count="1" prob="0.01"/>
+  		<drop event="Destroy" name="resourceGoldNugget" count="1" prob="0.02"/>
+  		<drop event="Destroy" name="resourceSilverNugget" count="1" prob="0.04"/>
+      <drop event="Destroy" name="resourceIronFragment" count="5" prob="0.5"/>
+  	</append>
+
+  <!-- CHANGE RESOURCES FROM SMALL ROCKS -->
+  <set xpath="/blocks/block[@name='rockResource']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">25</set>
+  <append xpath="/blocks/block[@name='rockResource']">
+    <drop event="Harvest" name="resourceScrapBrass" count="3" prob="0.33" tag="oreWoodHarvest"/>
+    <drop event="Harvest" name="resourceIronFragment" count="10" prob="0.5" tag="oreWoodHarvest"/>
+  </append>
+
+  <!-- ADDED DROP EVENTS TO TREES -->
+  <append xpath="/blocks/block[@name='treeMaster']">
+		<drop event="Destroy" name="resourceWood" count="50" tag="oreWoodDestroy"/>
+		<drop event="Destroy" name="resourceFeather" count="4,8" prob="0.6"/>
+		<drop event="Destroy" name="foodEgg" count="3,6" prob="0.5"/>
+	</append>
+
+  <!-- CHANGE MAX DAMAGE FOR SPIKES -->
+  <set xpath="/blocks/block[@name='trapSpikesWoodMaster']/property[@name='MaxDamage']/@value">100</set>
+  <set xpath="/blocks/block[@name='trapSpikesWoodMaster']/property[@name='Damage_received']/@value">25</set>
+  <set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='MaxDamage']/@value">200</set>
+  <set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Damage_received']/@value">25</set>
+
+  <!-- CHANGE UPGRADE HIT COUNT FOR FLAGSTONE -->
+  <set xpath="/blocks/block[@name='flagstoneMaster']/property[@class='UpgradeBlock']/property[@name='UpgradeHitCount']/@value">4</set>
+
+  <append xpath="/blocks/block[@name='woodFrameMaster']">
+    <property name="UpgradeExpValue" value="100" />
+  </append>
+
+</configs>

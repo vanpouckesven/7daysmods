@@ -1,0 +1,8 @@
+<configs>
+
+	<!-- CHANGE STAMINALOSS -->
+	<set xpath="/progression/perks/perk[@name='perkSexualTrex']/effect_group/passive_effect[@name='StaminaLoss']/@value">-0.1,-0.5</set>
+	<set xpath="/progression/perks/perk[@name='perkParkour']/effect_group/passive_effect[@name='StaminaLoss']/@value">-0.3,-1</set>
+
+
+</configs>

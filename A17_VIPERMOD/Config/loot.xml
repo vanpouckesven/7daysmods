@@ -1,0 +1,9 @@
+<configs>
+    <setattribute xpath="/lootcontainers/lootgroup[@name='workingStiffsSub']" name="count">1,3</setattribute>
+
+    <setattribute xpath="/lootcontainers/lootgroup[@name='groupBirdNest']/item[@name='foodEgg']" name="count">1,2</setattribute>
+    <set xpath="/lootcontainers/lootgroup[@name='groupBirdNestMain']/item[@name='resourceFeather']/@count">3,6</set>
+    <setattribute xpath="/lootcontainers/lootgroup[@name='groupBirdNestMain']/item[@name='resourceFeather']" name="prob">0.9</setattribute>
+
+
+</configs>

@@ -1,0 +1,23 @@
+<configs>
+  <set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">5</set>
+
+  <append xpath="/quests/quest[@id='quest_whiteRiverCitizen1']">
+    <reward type="SkillPoints" value="5" />
+    <!--<reward type="Item" id="meleeToolPickaxeSteel" value="3" />
+    <reward type="Item" id="meleeToolFireaxeSteel" value="3" />
+    <reward type="Item" id="resourceForgedSteel" value="20" />-->
+  </append>
+
+  <!-- Improve quest rewards -->
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='200']/@value">500</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='330']/@value">750</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='350']/@value">750</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='560']/@value">1000</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='625']/@value">1000</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='800']/@value">1250</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='875']/@value">1250</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='940']/@value">1250</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='1020']/@value">1500</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='1350']/@value">1750</set>
+  <set xpath="/quests/quest/reward[@type='Item'][@id='casinoCoin'][@value='1400']/@value">1750</set>
+</configs>
